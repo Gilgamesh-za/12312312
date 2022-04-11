@@ -54,14 +54,13 @@
                                 <input type="text" class="form-control" id="ket" name="ket" value="<?= $row['ket'];?>" required>
                             </div>
                         </div>
-                        <button type="submit" class="d-block ms-auto btn btn-primary mt-4">Submit</button>
+                        <button type="submit" class="d-block ms-auto btn btn-outline-primary mt-4">Submit</button>
                         <a href="/tambah_catatan">
                     </form>
                     <!--FORM END-->
                     <?php endforeach; ?>
 
                 </div>
-                <!-- CARD DROPDOWN END-->
             </div>
         </div>
         <!--CARD END-->

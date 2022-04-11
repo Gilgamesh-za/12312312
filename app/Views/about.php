@@ -43,7 +43,8 @@
         <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
           <div class="feature-box d-flex align-items-center">
             <i class="bi bi-check"></i>
-            <h3>Niat</h3>
+            <h3>intention
+</h3>
           </div>
         </div>
 
@@ -77,8 +78,8 @@
         <!-- Tab 2 -->
         <div class="tab-pane fade show" id="tab2">
           <p>
-              Aplikasi ini dibuat untuk mencatat segala perjalanan anda dalam rangka mencegah penyebaran covid-19 menjadi lebih luas,dengan cara mencatat suhu anda di setiap tempat yang anda kunjungi
-              lalu berdasarkan suhu tersebut anda bisa menyimpulkan apakah suhu anda berada di angka normal atau di angka yang menunjukan tanda2 covid-19.
+              Aplikasi ini dibuat untuk membantu anda dalam memanejemen diri,dengan cara mencatat segala hal yang ingin anda catat termasuk lokasi,waktu dan tanggal yang anda kunjungi dan juga anda 
+              bisa mencatat hal2 lain demi menuju ke kehidupan yang anda inginkan.
           </p>
         </div>
         <!-- End Tab 2 Content -->

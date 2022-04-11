@@ -12,12 +12,10 @@
 
   <!-- Favicons -->
   <link href="<?= base_url('assets/img/favicon.png') ?>" rel="icon">
-  <link href="<?= base_url(
-                'assets/img/apple-touch-icon.png'
-              ) ?>" rel="apple-touch-icon">
+  <link href="<?= base_url('assets/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="<?= base_url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i') ?>" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="<?= base_url('assets/vendor/aos/aos.css') ?>" rel="stylesheet">
@@ -28,6 +26,8 @@
   <link href="<?= base_url('assets/vendor/swiper/swiper-bundle.min.css') ?>" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
+  <link href="<?= base_url('assets/css/style2.css') ?>" rel="stylesheet">
+
 
 
   <!-- =======================================================
@@ -44,7 +44,7 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="/" class="logo d-flex align-items-center">
+      <a href="<?= base_url('/') ?>" class="logo d-flex align-items-center">
         <img src="<?= base_url('assets/img/logo.png') ?>" alt="">
         <span>Peduli Diri</span>
       </a>
@@ -53,7 +53,9 @@
         <ul>
           <li><a class="nav-link scrollto" href="<?= base_url('/') ?>">Home</a></li>
           <li><a class="nav-link scrollto" href="<?= base_url('profile') ?>">Profile</a></li>
+          <?php if(session('id')): ?>
           <li><a class="nav-link scrollto" href="<?= base_url('logout') ?>">Logout</a></li>
+          <?php endif?>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -86,7 +88,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="<?= base_url('index.html') ?>" class="logo d-flex align-items-center">
               <img src="<?= base_url('assets/img/logo.png') ?>" alt="">
               <span>Peduli Diri</span>
             </a>
@@ -149,6 +151,30 @@
       });
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // DROPDOWN
+        $(document).ready(function () {
+            $("#btn-adduser").click(function () {
+                $("#content-adduser").toggleClass("d-none");
+                $("#btn-adduser > i").toggleClass("bi-caret-down-fill bi-caret-up-fill")
+            });
+        });
+    </script>
+    <script>
+      var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+    </script>
+     <!-- Page level plugins -->
+     <script src="js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="js/chart-area-demo.js"></script>
 
 </body>
 
