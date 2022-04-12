@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -176,6 +177,6 @@ myModal.addEventListener('shown.bs.modal', function () {
 <!-- Page level custom scripts -->
 <script src="js/chart-area-demo.js"></script>
 
+<!--  -->
 </body>
-
 </html>

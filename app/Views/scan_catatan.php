@@ -12,7 +12,7 @@
 <div class="card-body">
   
                     <!-- FORM START -->
-                    <form action="/Catatan/save" method="POST">
+                    <form action="/Catatan/save_scan" method="POST">
                         <div class="row mb-3">
                             <div class="col-md-2 col-12">
                                 <label for="lokasi" class="form-label">Lokasi<span class="text-danger">*</span></label>

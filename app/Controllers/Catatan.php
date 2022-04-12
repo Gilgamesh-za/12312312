@@ -10,7 +10,7 @@ class Catatan extends BaseController
     public function __construct()
     {
         //aktifkan url helper
-        helper('url');
+        helper('');
         //load model User
         $this->CatatanModel = new \App\Models\CatatanModel();
     }
@@ -35,9 +35,21 @@ class Catatan extends BaseController
     public function scan_catatan()
     {
         $data['judul'] = 'Tambah Catatan';
+
         return view('scan_catatan');
     }
-
+    public function save_scan()
+    {
+        $data = [
+            'lokasi' => $this->request->getPost('lokasi'),
+            'tanggal' => date('Y-m-d'),
+            'waktu' => date('h:i: a'),
+            'ket' => $this->request->getPost('ket'),
+            'id_user' => session()->get('id')
+        ];
+        $this->CatatanModel->save($data);
+        return redirect()->to('/table_perjalanan');
+    }
     public function save()
     {
         $data = [

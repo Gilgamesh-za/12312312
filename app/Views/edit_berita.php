@@ -17,14 +17,14 @@
                     <?= csrf_field(); ?>
                     <input type="hidden" name="_method" value="put">
                     <?php foreach($news as $row): ?>
-                        <input type="hidden" name="id_perjalanan" value="<?= $row['id_blog'];?>">
+                        <input type="hidden" name="id_blog" value="<?= $row['id_blog'];?>">
 
                         <div class="row mb-3">
                             <div class="col-md-2 col-12">
                                 <label for="text" class="form-label">Judul <span class="text-danger">*</span></label>
                             </div>
                             <div class="col-md-10 col-12">
-                                <input type="text" class="form-control" id="date" name="tanggal" value="<?= $row['judul'];?>" required>
+                                <input type="text" class="form-control" id="judul" name="judul" value="<?= $row['judul'];?>" required>
                             </div>
                         </div>
 
@@ -33,7 +33,7 @@
                                 <label for="text" class="form-label">Quote <span class="text-danger">*</span></label>
                             </div>
                             <div class="col-md-10 col-12">
-                                <input type="text" class="form-control" id="waktu" name="waktu" value="<?= $row['sub_isi'];?>" required>
+                                <input type="text" class="form-control" id="sub_isi" name="sub_isi" value="<?= $row['sub_isi'];?>" required>
                             </div>
                         </div>  
 
@@ -42,11 +42,11 @@
                                 <label for="ket" class="form-label">Isi</label>
                             </div>
                             <div class="col-md-10 col-12">
-                                <input type="text" class="form-control" id="ket" name="ket" value="<?= $row['isi'];?>" required>
+                                <input type="text" class="form-control" id="isi" name="isi" value="<?= $row['isi'];?>" required>
                             </div>
                         </div>
                         <button type="submit" class="d-block ms-auto btn btn-outline-primary mt-4">Submit</button>
-                        <a href="/save_berita">
+                        <a href="/edit_berita">
                     </form>
                     <!--FORM END-->
                     <?php endforeach; ?>

@@ -54,7 +54,9 @@
                   <?php endforeach; ?>
                 </tbody>
               </table>
+              <?php if (session()->get('akses')=='admin') : ?>
               <a href="/print" class="btn btn-outline-success" role="button" aria-disabled="true">Print</a>
+              <?php endif ?>
             </div>
             <!--Table END-->
           </div>

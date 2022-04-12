@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate PDF CodeIgniter 4 - qadrLabs</title>
-
-</head>
-
+<?=$this->extend('template/index2') ?>
+<?=$this->section('content') ?>
+<section>
 <body onload="window.print()">
-    <h2>Data Mahasiswa </h2>
-    <table border=1 width=80% cellpadding=2 cellspacing=0 style="margin-top: 5px; text-align:center">
+    <table class="table table-bordered">
         <thead>
                 <tr style="font-weight:bold">
                     <td>ID Perjalanan</td>
@@ -38,7 +29,8 @@
         </tbody>
     </table>
     <p>Jumlah data : <?= $jumlahcp ?></p>
-
+    </section>
 </body>
 
 </html>
+<?=$this->endSection(); ?>

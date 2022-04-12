@@ -21,3 +21,4 @@ class User implements FilterInterface
         // Do something here
     }
 }
+

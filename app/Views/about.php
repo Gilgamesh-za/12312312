@@ -72,7 +72,7 @@
       <!-- Tab 1 -->
       <div class="tab-content">
         <div class="tab-pane fade show active" id="tab1">
-          <p>We are bunch of student who like to make a website just for fun,nothing can give us more pleasure than happines of our client</p>
+          <p>Sekolompok anak muda yang suka bergelut dengan dunia teknologi,dan mendapat kepuasan tersendiri jika pelanggan merasa puas</p>
         </div>
         <!-- End Tab 1 Content -->
         <!-- Tab 2 -->

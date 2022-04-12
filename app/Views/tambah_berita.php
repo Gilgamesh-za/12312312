@@ -27,11 +27,11 @@
 							<div class="row g-3">
 								<div class="col-md-6">
 									<label class="form-label">Gambar</label>
-									<input type="file" name="gambar" class="form-control" value="">
+									<input type="file" name="gambar" class="form-control" value="" required>
 								</div>
 								<div class="col-md-6">
 									<label class="form-label">Judul</label>
-									<input type="text" class="form-control" name="judul" value="">
+									<input type="text" class="form-control" name="judul" value="" required>
 								</div>
 								<div class="col-md-6">
 									<label class="form-label">Quote</label>
@@ -39,7 +39,7 @@
 								</div>
 								<div class="col-md-6">
 									<label class="form-label">Isi</label>
-									<input type="text" class="form-control" name="isi" value="">
+									<input type="text" class="form-control" name="isi" value="" required>
 								</div>
 							</div> 
                             <!-- Row END -->
